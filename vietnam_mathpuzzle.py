@@ -1,5 +1,4 @@
 from __future__ import division
-import itertools
 
 # Faster solution for http://gizmodo.com/can-you-solve-this-vietnamese-math-puzzle-for-8-year-ol-1705734738?utm_campaign=socialflow_gizmodo_facebook&utm_source=gizmodo_facebook&utm_medium=socialflow
 
@@ -36,6 +35,5 @@ for v1 in range(1, 10):
 																if v9 == v1 or v9 == v2 or v9 == v3 or v9 == v4 or v9 == v5 or v9 == v6 or v9 == v7 or v9 == v8:
 																	continue
 																else:
-																	result = v1 + (13 * (v2 / v3)) + v4 + (12 * v5) - v6 - 11 + ((v7 * v8) / v9) - 10
-																	if result == 66.0:
+																	if v1 + (13 * (v2 / v3)) + v4 + (12 * v5) - v6 - 11 + ((v7 * v8) / v9) - 10 == 66.0:
 																		print "%s + (13 x (%s / %s)) + %s + (12 x %s) - %s - 11 + ((%s x %s) / %s) - 10" % (v1, v2, v3, v4, v5, v6, v7, v8, v9)
